@@ -1,6 +1,11 @@
-@import 'fonts';
-@import 'variables';
-@import 'base';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/base';
+@import './utils/classes';
+
+// LAYOUTS
+@import './layouts/header';
 
 h1 {
     font-family: $font-title;

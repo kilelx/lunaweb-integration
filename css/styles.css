@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap");
+/* Landscape phones and down */
+/* Portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Portrait laptop to large desktop */
+/* Large desktop */
 :root {
   font-size: 62.5%;
 }
@@ -16,7 +22,7 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: "Inter", "Roboto", sans-serif;
 }
 
@@ -40,6 +46,51 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    max-width: 850px;
+  }
+}
+@media (min-width: 980px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+.nav {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 3px;
+}
+.nav__logo p {
+  font-weight: 600;
 }
 
 h1 {

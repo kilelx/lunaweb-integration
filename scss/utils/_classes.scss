@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include sm {
+        max-width: 720px;
+    }
+    @include md {
+        max-width: 850px;
+    }
+    @include l {
+        max-width: 1300px;
+    }
+    // @include xl {
+    //     max-width: 1150px;
+    // }
+}
+
+// /* === FLEX === */
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .column {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+// }
+
+// /* === SPACES === */
+// .around {
+//     justify-content: space-around;
+// }
+
+// .between {
+//     justify-content: space-between;
+// }
+
+// .evenly {
+//     justify-content: space-evenly;
+// }
+
+// .items-center{
+//     align-items: center;
+// }
