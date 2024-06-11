@@ -4,31 +4,70 @@
         justify-content: space-between;
         align-items: center;
     }
+
     &__left {
         @include sm {
             max-width: 49rem;
         }
     }
+
     &__title {
         font-size: 3rem;
+
         @include sm {
             font-size: 4rem;
             line-height: 4.3rem;
         }
     }
+
     &__subtitle {
         // font-size: 2.4rem;
         line-height: 2.4rem;
         margin: 2rem 0;
+
         @include sm {
             margin: 2.4rem 0;
         }
     }
+
+    &__right {
+        position: relative;
+        width: 100%;
+        max-width: 66rem;
+
+        .card {
+            position: absolute;
+            @include no-mobile {
+                display: none;
+            }
+            &--big {
+                font-size: 1.6rem;
+                max-width: 33rem;
+                bottom: 5rem;
+                left: 0;
+            }
+            &--small {
+                // transform: scale(.8);
+                max-width: 26rem;
+                font-size: 1.3rem;
+                right: -2rem;
+                bottom: 13rem;
+                padding: .6rem 1.6rem;
+                .card__wrapper {
+                    margin-bottom: 1.2rem;
+                    img {
+                        width: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
     &__img {
         margin: 5rem auto 0;
         max-width: 44rem;
         @include sm {
-            margin: 0;
+            margin: 0 4rem 0 auto;
         }
     }
 }

@@ -1,0 +1,18 @@
+.card {
+    background-color: #FFF;
+    border-radius: .8rem;
+    box-shadow: 10px 12px 27px rgba(0,0,0,.1);
+    padding: 1.6rem;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.6rem;
+        img {
+            width: 45px;
+            margin-right: 2.4rem;
+        }
+        p {
+            font-weight: 700;
+        }
+    }
+}
