@@ -5,4 +5,7 @@
     padding: 1.2rem 1.6rem;
     border-radius: 0.4rem;
     display: inline-block;
+    @include sm {
+        font-size: 1.6rem;
+    }
 }

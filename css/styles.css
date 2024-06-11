@@ -25,6 +25,11 @@ body {
   font-size: 1.6rem;
   font-family: "Inter", "Roboto", sans-serif;
 }
+@media (min-width: 980px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
 
 p,
 h1,
@@ -61,17 +66,7 @@ a {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
-@media (min-width: 767px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .container {
-    max-width: 850px;
-  }
-}
-@media (min-width: 980px) {
+@media (min-width: 979px) {
   .container {
     max-width: 1300px;
   }
@@ -83,6 +78,10 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.nav a {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 .nav__logo {
   display: flex;
   flex-wrap: nowrap;
@@ -92,16 +91,72 @@ a {
 .nav__logo p {
   font-weight: 600;
 }
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+@media (max-width: 980px) {
+  .nav__list {
+    display: none;
+  }
+}
+.nav__list--link {
+  opacity: 0.7;
+}
+@media (min-width: 980px) {
+  .nav__burger {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .nav__desktop {
+    display: none;
+  }
+}
+.nav__desktop > a:first-child {
+  margin-right: 1.2rem;
+}
 
+@media (min-width: 980px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 980px) {
+  .hero__left {
+    max-width: 49rem;
+  }
+}
 .hero__title {
   font-size: 3rem;
+}
+@media (min-width: 980px) {
+  .hero__title {
+    font-size: 4rem;
+    line-height: 4.3rem;
+  }
 }
 .hero__subtitle {
   line-height: 2.4rem;
   margin: 2rem 0;
 }
+@media (min-width: 980px) {
+  .hero__subtitle {
+    margin: 2.4rem 0;
+  }
+}
 .hero__img {
-  margin-top: 5rem;
+  margin: 5rem auto 0;
+  max-width: 44rem;
+}
+@media (min-width: 980px) {
+  .hero__img {
+    margin: 0;
+  }
 }
 
 .btn {
@@ -111,6 +166,11 @@ a {
   padding: 1.2rem 1.6rem;
   border-radius: 0.4rem;
   display: inline-block;
+}
+@media (min-width: 980px) {
+  .btn {
+    font-size: 1.6rem;
+  }
 }
 
 .trust {

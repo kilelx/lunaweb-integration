@@ -19,6 +19,9 @@ body {
     font-size: 1.6rem;
     // color: $text;
     font-family: $font-body;
+    @include sm {
+        font-size: 1.8rem;
+    }
 }
 
 p,

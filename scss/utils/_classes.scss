@@ -4,12 +4,12 @@
     margin-right: auto;
     padding-left: 3.2rem;
     padding-right: 3.2rem;
-    @include sm {
-        max-width: 720px;
-    }
-    @include md {
-        max-width: 850px;
-    }
+    // @include sm {
+    //     max-width: 720px;
+    // }
+    // @include md {
+    //     max-width: 850px;
+    // }
     @include l {
         max-width: 1300px;
     }

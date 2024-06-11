@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
     &__logo {
         display: flex;
         flex-wrap: nowrap;
@@ -10,6 +14,32 @@
         column-gap: 3px;
         p {
             font-weight: 600;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3.5rem;
+        @include no-mobile {
+            display: none;
+        }
+        &--link {
+            opacity: .7;
+        }
+    }
+    &__burger {
+        @include sm {
+            display: none;
+        }
+    }
+    &__desktop {
+        // background-color: red;
+        @include no-mobile {
+            display: none;
+        }
+        & > a:first-child {
+            margin-right: 1.2rem;
         }
     }
 }
