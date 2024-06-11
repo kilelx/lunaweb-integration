@@ -6,6 +6,13 @@
 
 // LAYOUTS
 @import './layouts/header';
+@import './layouts/hero';
+
+// COMPONENTS
+@import './components/button';
+
+// PAGES
+@import './pages/home';
 
 h1 {
     font-family: $font-title;
