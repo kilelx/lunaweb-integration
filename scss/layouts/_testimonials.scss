@@ -1,0 +1,36 @@
+.testimonials {
+    padding-bottom: 4rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+    @include sm {
+        flex-direction: row;
+        justify-content: space-around;
+        &__wrapper {
+            max-width: 45%;
+        }
+    }
+    &__content {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+    }
+    &__author {
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: normal;
+        img {
+            width: 3.2rem;
+            height: auto;
+            object-fit: contain;
+        }
+        .author__infos {
+            margin-left: 2rem;
+            p:first-child {
+                margin-bottom: .6rem;
+            }
+        }
+    }
+}

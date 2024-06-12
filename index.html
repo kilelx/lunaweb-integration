@@ -4,6 +4,7 @@
     - attention à la couleur du bg du body
     - couleur du texte
     - changer images (mauvaise qualité)
+    - section alternante : dernière image ne scale pas vers ~800px
 
 -->
 
@@ -58,8 +59,8 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="hero">
+    <main>
+        <section class="container hero">
             <div class="hero__left">
                 <h1 class="hero__title">Start chatting with customers, anywhere
                     </br>anytime with application</h1>
@@ -108,7 +109,7 @@
 
         </section>
 
-        <section class="triptych">
+        <section class="container triptych">
             <h2 class="section__title">Features for a better experience</h2>
 
             <div class="triptych__wrapper">
@@ -136,19 +137,23 @@
             </div>
         </section>
 
-        <section class="alternate">
+        <section class="container alternate">
             <article class="alternate__article">
                 <img src="./assets/woman-with-headset-video-call.webp" alt="Woman with headset video call">
                 <div class="article__content">
                     <h3 class="content__title">Meet your customers, with live video chat</h3>
-                    <p class="content__desc">Great software that allows you to chat from any place at any time without any interruption. Great software that allows you to chat from any place at any time without any interruption. Great software that allows you to chat from any place at any time without any interruption.</p>
+                    <p class="content__desc">Great software that allows you to chat from any place at any time without
+                        any interruption. Great software that allows you to chat from any place at any time without any
+                        interruption. Great software that allows you to chat from any place at any time without any
+                        interruption.</p>
                 </div>
             </article>
             <article class="alternate__article">
                 <img src="./assets/direct-conversation.webp" alt="Screenshot of a fictive conversation">
                 <div class="article__content">
                     <h3 class="content__title">Start selling directly inside conversations</h3>
-                    <p class="content__desc">Great software that allows you to chat from any place at any time without any interruption.</p>
+                    <p class="content__desc">Great software that allows you to chat from any place at any time without
+                        any interruption.</p>
                     <a href="#" title="Start chatting now" class="btn">Start chatting now</a>
                 </div>
             </article>
@@ -156,11 +161,12 @@
                 <img src="./assets/example-inbox.webp" alt="Screenshot of a fictive inbox">
                 <div class="article__content">
                     <h3 class="content__title">Get direct orders from your customers</h3>
-                    <p class="content__desc">Great software that allows you to chat from any place at any time without any interruption.</p>
+                    <p class="content__desc">Great software that allows you to chat from any place at any time without
+                        any interruption.</p>
                     <div class="stats__wrapper">
                         <div class="stat__wrapper">
                             <p class="stat__number">4.3k</p>
-                            <p class="stat__expl">Websit’s powering</p>
+                            <p class="stat__expl">Websites powering</p>
                         </div>
                         <div class="stat__wrapper">
                             <p class="stat__number">7M+</p>
@@ -169,6 +175,38 @@
                     </div>
                 </div>
             </article>
+        </section>
+
+        <section class="bg--purple">
+
+            <h2 class="section__title">What our customer are saying</h2>
+
+            <div class="container testimonials">
+                <div class="testimonials__wrapper">
+                    <p class="testimonials__content">“The best ui kit for developers. So easy to implement and publish.”
+                    </p>
+                    <div class="testimonials__author">
+                        <img src="/assets/img-user-1.png" alt="Picture of Eli Json">
+                        <div class="author__infos">
+                            <p class="author__name">Eli JSON</p>
+                            <p class="author__job">Medical assistant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials__wrapper">
+                    <p class="testimonials__content">“Rareblocks helps you optimize for engagement.”</p>
+                    <div class="testimonials__author">
+                        <img src="/assets/img-user-2.png" alt="Picture of Eli Json">
+                        <div class="author__infos">
+                            <p class="author__name">Eli JSON</p>
+                            <p class="author__job">Medical assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
