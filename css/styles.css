@@ -287,6 +287,10 @@ a {
   color: #FFF;
   padding: 1.2rem 1.6rem;
   border-radius: 0.4rem;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgba(43, 89, 255, 0.9);
 }
 
 .card {
