@@ -2,32 +2,17 @@
     // display: flex;
     // flex-direction: column;
     // row-gap: 8rem;
-    margin: 4rem 0;    
+    margin: 4rem 0;
+
     &__article {
         margin: 4rem 0;
-        @include sm {
-            display: flex;
-            align-items: center;
-            column-gap: 10rem;
 
-            .article__content, img {
-                max-width: 46rem;
-            }
-
-            // Last article
-            article:last-child {
-                .content__title {
-                    margin: 0 0 2rem;
-                }
-                img {
-                    display: none;
-                }
-            }
-        }
         img {
             max-width: 46rem;
-            margin: 0 auto;
             object-fit: contain;
+            @include no-mobile {
+                margin: 0 auto;
+            }
         }
 
         .content {
@@ -37,6 +22,7 @@
                 font-weight: 600;
                 color: $title-dark;
                 margin: 4rem 0 2rem;
+
                 @include sm {
                     margin-top: 0;
                     font-size: 4rem;
@@ -44,27 +30,66 @@
                 }
             }
         }
+                
+        // On desktop
+        @include sm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10rem;
+            margin: 6rem 0;
 
+            // Changing the image order when it's an even item
+            &:nth-child(even) {
+                img {
+                    order: 2;
+                }
+            }
+
+            .article__content,
+            img {
+                max-width: 46rem;
+            }
+
+            // Last article
+            article:last-child {
+                .content__title {
+                    margin: 0 0 2rem;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        // If there is a CTA
         & .btn {
             margin-top: 2rem;
         }
 
+        // Small stat section
         .stats__wrapper {
             display: flex;
             column-gap: 2rem;
             margin-top: 2rem;
+
             .stat {
                 &__wrapper {
                     display: flex;
                     align-items: center;
                     column-gap: 1.2rem;
                 }
+
                 &__number {
                     font-size: 2.4rem;
                     font-weight: 700;
                 }
-                &__number {
+
+                &__expl {
                     max-width: 7.5rem;
+                    font-size: 1.6rem;
+                    line-height: normal;
                 }
             }
         }
