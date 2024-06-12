@@ -1,0 +1,17 @@
+.alternate {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+    .content {
+        &__title {
+            font-family: $font-title;
+            font-size: 3rem;
+            font-weight: 600;
+            color: $title-dark;
+            margin: 4rem 0 2rem;
+        }
+        &__desc {
+            line-height: 3.2rem;
+        }
+    }
+}
