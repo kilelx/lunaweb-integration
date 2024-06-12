@@ -1,17 +1,72 @@
 .alternate {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8rem;
-    .content {
-        &__title {
-            font-family: $font-title;
-            font-size: 3rem;
-            font-weight: 600;
-            color: $title-dark;
-            margin: 4rem 0 2rem;
+    // display: flex;
+    // flex-direction: column;
+    // row-gap: 8rem;
+    margin: 4rem 0;    
+    &__article {
+        margin: 4rem 0;
+        @include sm {
+            display: flex;
+            align-items: center;
+            column-gap: 10rem;
+
+            .article__content, img {
+                max-width: 46rem;
+            }
+
+            // Last article
+            article:last-child {
+                .content__title {
+                    margin: 0 0 2rem;
+                }
+                img {
+                    display: none;
+                }
+            }
         }
-        &__desc {
-            line-height: 3.2rem;
+        img {
+            max-width: 46rem;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+
+        .content {
+            &__title {
+                font-family: $font-title;
+                font-size: 3rem;
+                font-weight: 600;
+                color: $title-dark;
+                margin: 4rem 0 2rem;
+                @include sm {
+                    margin-top: 0;
+                    font-size: 4rem;
+                    line-height: 4.3rem;
+                }
+            }
+        }
+
+        & .btn {
+            margin-top: 2rem;
+        }
+
+        .stats__wrapper {
+            display: flex;
+            column-gap: 2rem;
+            margin-top: 2rem;
+            .stat {
+                &__wrapper {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 1.2rem;
+                }
+                &__number {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                }
+                &__number {
+                    max-width: 7.5rem;
+                }
+            }
         }
     }
 }

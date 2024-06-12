@@ -24,6 +24,7 @@ html {
 body {
   font-family: "Inter", "Roboto", sans-serif;
   font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 
 p,
@@ -146,6 +147,7 @@ a {
 @media (min-width: 767px) {
   .hero__subtitle {
     margin: 2.4rem 0;
+    line-height: 3.2rem;
   }
 }
 .hero__right {
@@ -166,6 +168,7 @@ a {
   max-width: 33rem;
   bottom: 5rem;
   left: 0;
+  line-height: 2.2rem;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .hero__right .card--big {
@@ -178,6 +181,7 @@ a {
   right: -2rem;
   bottom: 13rem;
   padding: 0.6rem 1.6rem;
+  line-height: 1.6rem;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .hero__right .card--small {
@@ -201,29 +205,76 @@ a {
 }
 
 .alternate {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8rem;
+  margin: 4rem 0;
 }
-.alternate .content__title {
+.alternate__article {
+  margin: 4rem 0;
+}
+@media (min-width: 767px) {
+  .alternate__article {
+    display: flex;
+    align-items: center;
+    column-gap: 10rem;
+  }
+  .alternate__article .article__content, .alternate__article img {
+    max-width: 46rem;
+  }
+  .alternate__article article:last-child .content__title {
+    margin: 0 0 2rem;
+  }
+  .alternate__article article:last-child img {
+    display: none;
+  }
+}
+.alternate__article img {
+  max-width: 46rem;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.alternate__article .content__title {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
   font-weight: 600;
   color: #131313;
   margin: 4rem 0 2rem;
 }
-.alternate .content__desc {
-  line-height: 3.2rem;
+@media (min-width: 767px) {
+  .alternate__article .content__title {
+    margin-top: 0;
+    font-size: 4rem;
+    line-height: 4.3rem;
+  }
+}
+.alternate__article .btn {
+  margin-top: 2rem;
+}
+.alternate__article .stats__wrapper {
+  display: flex;
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+.alternate__article .stats__wrapper .stat__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+}
+.alternate__article .stats__wrapper .stat__number {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.alternate__article .stats__wrapper .stat__number {
+  max-width: 7.5rem;
 }
 
 .btn {
-  background-color: #2B59FF;
-  color: #FFF;
-  font-weight: 500;
-  padding: 1.2rem 1.6rem;
-  border-radius: 0.4rem;
   display: inline-block;
   font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #2B59FF;
+  color: #FFF;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
 }
 
 .card {
@@ -288,7 +339,7 @@ a {
 }
 
 .triptych {
-  padding: 2rem 0 6rem;
+  padding: 2rem 0 4rem;
 }
 .triptych__wrapper {
   display: flex;
@@ -307,7 +358,6 @@ a {
 .triptych__wrapper .card {
   padding: 1.6rem;
   font-size: 1.8rem;
-  line-height: 3.2rem;
 }
 .triptych__wrapper .card__wrapper {
   margin-bottom: 0.8rem;

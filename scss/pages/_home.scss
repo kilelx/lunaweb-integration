@@ -39,7 +39,7 @@
 
 // FEATURES SECTION
 .triptych {
-    padding: 2rem 0 6rem;
+    padding: 2rem 0 4rem;
     // background-color: $gray-bg;
     &__wrapper {
         display: flex;
@@ -55,7 +55,6 @@
         .card {
             padding: 1.6rem;
             font-size: 1.8rem;
-            line-height: 3.2rem;
             &__wrapper {
                 margin-bottom: .8rem;
             }
@@ -76,4 +75,9 @@
                 }
         }
     }
+}
+
+// ALTERNATE SECTION
+.alternate {
+    
 }

@@ -1,9 +1,10 @@
 .btn {
-    background-color: $primary;
-    color: #FFF;
-    font-weight: 500;
-    padding: 1.2rem 1.6rem;
-    border-radius: 0.4rem;
     display: inline-block;
     font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+    background-color: $primary;
+    color: #FFF;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.4rem;
 }
