@@ -8,7 +8,7 @@
 
 /* Portrait tablet */
 @mixin sm {
-    @media (min-width: 980px) {
+    @media (min-width: 767px) {
         @content;
     }
 }
@@ -30,7 +30,7 @@
 
 // NO SHOW ON MOBILE
 @mixin no-mobile {
-    @media (max-width: 980px) {
+    @media (max-width: 767px) {
         @content;
     }
 }
