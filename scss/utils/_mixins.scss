@@ -8,14 +8,16 @@
 
 /* Portrait tablet */
 @mixin sm {
-    @media (min-width: 767px) {
+    // @media (min-width: 767px) {
+    @media (min-width: 849px) {
         @content;
     }
 }
 
 /* Portrait tablet to landscape and desktop */
 @mixin md {
-    @media (min-width: 768px) and (max-width: 979px) {
+    // @media (min-width: 768px) and (max-width: 979px) {
+    @media (min-width: 850px) and (max-width: 979px) {
         @content;
     }
 }
@@ -30,7 +32,8 @@
 
 // NO SHOW ON MOBILE
 @mixin no-mobile {
-    @media (max-width: 767px) {
+    // @media (max-width: 767px) {
+    @media (max-width: 849px) {
         @content;
     }
 }
