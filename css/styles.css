@@ -82,15 +82,6 @@ a {
   font-size: 1.6rem;
   font-weight: 500;
 }
-.nav__logo {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  column-gap: 3px;
-}
-.nav__logo p {
-  font-weight: 600;
-}
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -317,6 +308,87 @@ a {
   margin-bottom: 0.6rem;
 }
 
+.footer {
+  font-size: 1.6rem;
+  color: #000;
+  line-height: normal;
+}
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3.2rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #B4B4B4;
+}
+@media (min-width: 767px) {
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2.6rem;
+  }
+}
+.footer__top .socials__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.footer__top .socials__wrapper img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+@media (min-width: 767px) {
+  .footer__links {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+}
+.footer__bottom {
+  padding: 3rem 0 4rem;
+  opacity: 0.7;
+}
+@media (min-width: 767px) {
+  .footer__bottom {
+    padding: 2.6rem 0 6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__bottom .legals__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 3.2rem;
+}
+.footer__bottom .copyright {
+  margin-top: 2rem;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .footer__bottom .copyright {
+    order: 0;
+    margin-top: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.logo p {
+  font-weight: 600;
+  margin-left: 3px;
+}
+
 .btn {
   display: inline-block;
   font-size: 1.6rem;
@@ -329,7 +401,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 .btn:hover {
-  background-color: rgba(43, 89, 255, 0.9);
+  background-color: rgba(43, 89, 255, 0.8);
 }
 
 .card {
@@ -362,6 +434,19 @@ a {
 @media (min-width: 767px) {
   .section__title {
     font-size: 3rem;
+  }
+}
+
+.demo__wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .demo__wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 60rem;
   }
 }
 

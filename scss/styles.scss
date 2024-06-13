@@ -10,11 +10,14 @@
 @import './layouts/triptych';
 @import './layouts/alternate';
 @import './layouts/testimonials';
+@import './layouts/footer';
 
 // COMPONENTS
+@import './components/logo';
 @import './components/button';
 @import './components/card';
 @import './components/sectionTitle';
+@import './components/demoSection';
 
 // PAGES
 @import './pages/home';
