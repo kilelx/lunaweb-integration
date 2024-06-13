@@ -1,10 +1,13 @@
 .hero {
     font-size: 1.6rem;
     @include sm {
-        font-size: 1.8rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: #FFF;
+        & > div {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__left {

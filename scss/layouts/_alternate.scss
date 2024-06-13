@@ -1,17 +1,16 @@
 .alternate {
-    // display: flex;
-    // flex-direction: column;
-    // row-gap: 8rem;
-    // margin: 4rem 0;
-
+    .bg--white {
+        background-color: #FFF;
+    }
     &__article {
-        margin: 4rem 0;
-
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         img {
-            // max-width: 46rem;
             object-fit: contain;
+
             @include no-mobile {
                 margin: 0 auto;
+                max-width: 40rem;
             }
         }
 
@@ -30,14 +29,15 @@
                 }
             }
         }
-                
+
         // On desktop
         @include sm {
             display: flex;
             align-items: center;
             justify-content: center;
             column-gap: 10rem;
-            margin: 6rem 0;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
 
             // Changing the image order when it's an even item
             &:nth-child(even) {
@@ -50,13 +50,19 @@
             img {
                 max-width: 46rem;
             }
+        }
 
-            // Last article
-            article:last-child {
+        // Changing background on first child
+        &:first-child {
+            background-color: #FFF;
+        }
+
+        // Do not display image on mobile for the last child
+        @include no-mobile {
+            &.no--mobile {
                 .content__title {
                     margin: 0 0 2rem;
                 }
-
                 img {
                     display: none;
                 }

@@ -41,8 +41,8 @@
 
 // FEATURES SECTION
 .triptych {
-    padding: 2rem 0 4rem;
-    // background-color: $gray-bg;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     &__wrapper {
         display: flex;
         flex-direction: column;

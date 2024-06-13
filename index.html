@@ -6,6 +6,8 @@
     - changer images (mauvaise qualité)
     - section alternante : dernière image ne scale pas vers ~800px
     - title + alt sur les images
+    - figure pour changer de qualité image
+    - favicon
 
 -->
 
@@ -24,8 +26,8 @@
 
 <body>
 
-    <header class="container">
-        <nav class="nav">
+    <header>
+        <nav class="container nav">
             <a href="#" class="logo" title="Accueil">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -61,50 +63,55 @@
     </header>
 
     <main>
-        <section class="container hero">
-            <div class="hero__left">
-                <h1 class="hero__title">Start chatting with customers, anywhere
-                    </br>anytime with application</h1>
-                <p class="hero__subtitle">Great software that allows you to chat from any place at any time without any
-                    interruption.</p>
-                <a href="#" title="Start chatting now" class="btn">Start chatting now</a>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__left">
+                    <h1 class="hero__title">Start chatting with customers, anywhere
+                        </br>anytime with application</h1>
+                    <p class="hero__subtitle">Great software that allows you to chat from any place at any time without
+                        any
+                        interruption.</p>
+                    <a href="#" title="Start chatting now" class="btn">Start chatting now</a>
 
-                <div class="trust">
-                    <div class="trust__gallery">
-                        <img src="./assets/img-user-2.png" class="trust__gallery--img" alt="Photo de Eli JSON">
-                        <img src="./assets/img-user-1.png" class="trust__gallery--img" alt="Photo de Eli JSON">
-                        <img src="./assets/img-user-1.png" class="trust__gallery--img" alt="Photo de Eli JSON">
+                    <div class="trust">
+                        <div class="trust__gallery">
+                            <img src="./assets/img-user-2.png" class="trust__gallery--img" alt="Photo de Eli JSON">
+                            <img src="./assets/img-user-1.png" class="trust__gallery--img" alt="Photo de Eli JSON">
+                            <img src="./assets/img-user-1.png" class="trust__gallery--img" alt="Photo de Eli JSON">
+                        </div>
+                        <!-- <div class="trust__stats"> -->
+                        <p class="trust__stats">
+                            <span>2,291</span></br>
+                            Happy customers
+                        </p>
+                        <p class="trust__stats">
+                            <span>4.8/5</span></br>
+                            Rating
+                        </p>
                     </div>
-                    <!-- <div class="trust__stats"> -->
-                    <p class="trust__stats">
-                        <span>2,291</span></br>
-                        Happy customers
-                    </p>
-                    <p class="trust__stats">
-                        <span>4.8/5</span></br>
-                        Rating
-                    </p>
-                </div>
-            </div>
-
-            <!-- max width: 430px -->
-            <div class="hero__right">
-                <img src="./assets/hero-img.webp" class="hero__img" alt="Smiling young woman on her phone">
-
-                <div class="card card--big">
-                    <div class="card__wrapper">
-                        <img src="./assets/img-user-1.png" alt="Picture of Eli JSON">
-                        <p>Eli json</p>
-                    </div>
-                    <p>Great software that allows you to chat from any place at any time without any interruption.</p>
                 </div>
 
-                <div class="card card--small">
-                    <div class="card__wrapper">
-                        <img src="./assets/img-user-2.png" alt="Picture of Eli JSON">
-                        <p>Eli json</p>
+                <!-- max width: 430px -->
+                <div class="hero__right">
+                    <img src="./assets/hero-img.webp" class="hero__img" alt="Smiling young woman on her phone">
+
+                    <div class="card card--big">
+                        <div class="card__wrapper">
+                            <img src="./assets/img-user-1.png" alt="Picture of Eli JSON">
+                            <p>Eli json</p>
+                        </div>
+                        <p>Great software that allows you to chat from any place at any time without any interruption.
+                        </p>
                     </div>
-                    <p>Great software that allows you to chat from any place at any time without any interruption.</p>
+
+                    <div class="card card--small">
+                        <div class="card__wrapper">
+                            <img src="./assets/img-user-2.png" alt="Picture of Eli JSON">
+                            <p>Eli json</p>
+                        </div>
+                        <p>Great software that allows you to chat from any place at any time without any interruption.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -138,18 +145,23 @@
             </div>
         </section>
 
-        <section class="container alternate">
-            <article class="alternate__article">
-                <img src="./assets/woman-with-headset-video-call.webp" alt="Woman with headset video call">
-                <div class="article__content">
-                    <h3 class="content__title">Meet your customers, with live video chat</h3>
-                    <p class="content__desc">Great software that allows you to chat from any place at any time without
-                        any interruption. Great software that allows you to chat from any place at any time without any
-                        interruption. Great software that allows you to chat from any place at any time without any
-                        interruption.</p>
-                </div>
-            </article>
-            <article class="alternate__article">
+        <section class="alternate">
+            <div class="bg--white">
+                <article class="container alternate__article">
+                    <img src="./assets/woman-with-headset-video-call.webp" alt="Woman with headset video call">
+                    <div class="article__content">
+                        <h3 class="content__title">Meet your customers, with live video chat</h3>
+                        <p class="content__desc">Great software that allows you to chat from any place at any time
+                            without
+                            any interruption. Great software that allows you to chat from any place at any time without
+                            any
+                            interruption. Great software that allows you to chat from any place at any time without any
+                            interruption.</p>
+                    </div>
+                </article>
+            </div>
+
+            <article class="container alternate__article">
                 <img src="./assets/direct-conversation.webp" alt="Screenshot of a fictive conversation">
                 <div class="article__content">
                     <h3 class="content__title">Start selling directly inside conversations</h3>
@@ -158,7 +170,7 @@
                     <a href="#" title="Start chatting now" class="btn">Start chatting now</a>
                 </div>
             </article>
-            <article class="alternate__article">
+            <article class="container alternate__article no--mobile">
                 <img src="./assets/example-inbox.webp" alt="Screenshot of a fictive inbox">
                 <div class="article__content">
                     <h3 class="content__title">Get direct orders from your customers</h3>
