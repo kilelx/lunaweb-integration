@@ -26,8 +26,6 @@ body {
   font-size: 1.8rem;
   line-height: 3.2rem;
   background-color: #FAFAFA;
-  max-width: 100vw;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -123,7 +121,8 @@ header .nav__mobile {
   width: 100vw;
   position: absolute;
   top: 92px;
-  right: -101vw;
+  right: 0;
+  transform: translateX(101vw);
   background-color: #FAFAFA;
   z-index: 1000;
   display: flex;
@@ -133,10 +132,10 @@ header .nav__mobile {
   text-align: center;
   row-gap: 3rem;
   line-height: normal;
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 header .nav__mobile.show {
-  right: 0;
+  transform: translateX(0);
 }
 header .nav__mobile ul {
   display: flex;
