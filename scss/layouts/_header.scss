@@ -2,42 +2,95 @@ header {
     @include sm {
         background-color: #FFF;
     }
+
     .nav {
         padding-top: 30px;
         padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         a {
             font-size: 1.6rem;
             font-weight: 500;
         }
+
         &__list {
             display: flex;
             justify-content: space-between;
             align-items: center;
             column-gap: 3.5rem;
+
             @include no-mobile {
                 display: none;
             }
+
             &--link {
                 opacity: .7;
             }
         }
+
         &__burger {
+            position: relative;
+            width: 1.8rem;
+            height: 1.5rem;
+
             @include sm {
                 display: none;
             }
+
+            &>div {
+                background-color: #292D32;
+                width: 1.8rem;
+                height: 2px;
+                border-radius: 5px;
+                position: absolute;
+                transition: all .3s ease-in-out;
+            }
+
+            .burger {
+                &--top {
+                    top: 0;
+                }
+
+                &--middle {
+                    top: 5px;
+                }
+
+                &--bottom {
+                    top: 10px;
+                }
+            }
+
+            &.show {
+                .burger {
+                    &--top {
+                        transform: rotateX(45deg);
+                    }
+                    &--middle {
+                        opacity: 0;
+                        transform: translateX(20px);
+                    }
+                    &--bottom {
+                        top: 10px;
+                        transform: rotateX(-45deg);
+                    }
+                }
+            }
         }
+
         &__desktop {
+
             // background-color: red;
             @include no-mobile {
                 display: none;
             }
-            & > a:first-child {
+
+            &>a:first-child {
                 margin-right: 1.2rem;
             }
         }
+
         &__mobile {
             height: calc(100vh - 92px);
             width: 100vw;
@@ -53,16 +106,19 @@ header {
             justify-content: center;
             text-align: center;
             row-gap: 3rem;
-            line-height: normal;
+            // line-height: normal;
             transition: transform .3s ease-in-out;
+
             &.show {
                 transform: translateX(0);
             }
+
             ul {
                 display: flex;
                 flex-direction: column;
                 row-gap: 3rem;
             }
+
             @include sm {
                 display: none;
             }
