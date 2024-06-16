@@ -6,7 +6,9 @@ burgerMenu.addEventListener('click', () => {
     burgerMenu.classList.toggle('show');
     if(navMobile.classList.contains('show')) {
         document.body.style.overflow = 'hidden';
-        } else {
+        document.body.style.maxHeight = '100vh';
+    } else {
+        document.body.style.maxHeight = 'auto';
         document.body.style.overflow = 'visible';
     }
 })

@@ -289,6 +289,7 @@ header .nav__mobile ul {
 }
 .alternate__article img {
   object-fit: contain;
+  border-radius: 1rem;
 }
 @media (max-width: 849px) {
   .alternate__article img {
