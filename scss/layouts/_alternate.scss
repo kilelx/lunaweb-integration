@@ -7,7 +7,7 @@
         padding-bottom: 4rem;
         img {
             object-fit: contain;
-
+            border-radius: 1rem;
             @include no-mobile {
                 margin: 0 auto;
                 max-width: 40rem;
