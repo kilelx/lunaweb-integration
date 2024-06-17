@@ -39,6 +39,7 @@ header {
             position: relative;
             width: 1.9rem;
             height: 1.5rem;
+            cursor: pointer;
 
             @include sm {
                 display: none;
@@ -87,7 +88,6 @@ header {
         }
 
         &__desktop {
-            // background-color: red;
             @include no-mobile {
                 display: none;
             }
